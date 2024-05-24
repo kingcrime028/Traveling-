@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Reserve.css">
+
+    <title>Document</title>
+    
+</head>
+<body >
+    
+        <script src="Reserve.js"></script>
+        <h1>Our Probability:</h1>
+    <div id="main">
+        <div id="content">
+          <span class="slide">
+            <a href="#" onClick="openSlideMenu()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </span>
+  
+          <div id="menu" class="nav">
+            <a href="#" class="close" onClick="closeSlideMenu()">
+              <i class="fas fa-times"></i>
+            </a>
+            <a href="index.html">Home</a>
+            
+            <a href="./views/Category.html">Categories</a>
+            
+            <li><a class="NavLinks" href="./views/About.html">About</a></li>
+            <a href="Reserve.html">Reserve</a>
+            <li><a class="NavLinks" href="./views/ContactUs.html">Contact us</a></li>
+          </div>
+        </div>
+      </div>
+<div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+    <tr>
+    <th>Number:</th>
+    <th>Country</th>
+    <th>Number of Tourists</th>
+    </tr>
+    
+    <tr id="row1">
+    <td id="num_row1">1</td>
+    <td id="country_row1">France</td>
+    <td id="numberofTourists_row1">1,323,454</td>
+    <td>
+    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+    </td>
+    </tr>
+    
+    <tr id="row2">
+    <td id="num_row2">2</td>
+    <td id="country_row2">Turkeya</td>
+    <td id="numberofTourists_row2">2,089,909</td>
+    <td>
+    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+    </td>
+    </tr>
+    
+    <tr id="row3">
+    <td id="num_row3">3</td>
+    <td id="country_row3">Maldives</td>
+    <td id="numberofTourists_row3">5,054,090</td>
+    <td>
+    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+    </td>
+    </tr>
+    
+    <tr>
+    <td><input type="text" id="num"></td>
+    <td><input type="text" id="country"></td>
+    <td><input type="text" id="#ofT"></td>
+    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+    </tr>
+    
+    </table>
+    <br>
+    <br>
+    What do you love?
+   <p>Mountain<input type="radio" name="d"> 
+   Beach<input type="radio" name="d"></p> 
+    </div>
+    <div class="height-100 container d-flex justify-content-center align-items-center">
+    
+      <div class="card p-3">
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+              <h5 class="review-count">12 Reviews</h5>
+          </div>
+          
+          
+          <div class="mt-5 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Cleanliness</h5>
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+              
+          </div>
+          
+          <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Approachability of SLT</h5>
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+          </div>
+          
+          
+          <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Front Office</h5>
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+          </div>
+          
+          
+          <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">CPD</h5>
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+              </div>
+          </div>
+          
+          
+          <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Pastrol</h5>
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+          </div>
+          
+          <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Office Space</h5>
+              <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+  
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url(NavBar.css);
+
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    background-color: black; 
+    color: white;
+    
+  }
+  
+  body {
+    background-color:black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+table{
+   width: 500px;
+   
+    margin:200px 20px;
+}
+h1{
+  padding:20px;
+  margin: 20px;
+}
+ 
+  .nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+  }
+  
+  .nav a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .nav a:hover {
+    color: #fff;
+    transition: 0.4s;
+  }
+  
+  .nav .close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+  }
+  
+  .slide a {
+    
+    font-size: 36px;
+    position: fixed;
+    margin-top: 0;
+  }
+  
+  #content {
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+  }
+  
+  #text {
+    width: 90%;
+    padding: 5%;
+  }
+  #quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+
+  
+  .height-100{
+      height:100vh;
+  }
+  
+  .card{
+      width:380px;
+      border:none;
+      height:280px;
+  }
+  
+  .ratings{
+      margin-right:10px;
+  }
+  
+  .ratings i{
+      
+     
+      font-size:32px;
+  }
+  
+  .rating-color{
+      color:#fbc634 !important;
+  }
+  
+  .review-count{
+      font-weight:400;
+      margin-bottom:2px;
+      font-size:24px !important;
+  }
+  
+  .small-ratings i{
+    color:#cecece;   
+  }
+  
+  .review-stat{
+      font-weight:300;
+      font-size:18px;
+      margin-bottom:2px;
+  }
+
+
+
+
+
+
+
+
